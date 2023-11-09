@@ -1,0 +1,19 @@
+<html>
+<head>Date Function
+<title>Date</title>
+</head>
+<body>
+	<script>
+		var e = new Date(88,5,11,11,42,0,0);
+		document.write(e);
+	function printTime(){
+		var d = new Date();
+		var h = d.getHours();
+		var m = d.getMinutes();
+		var s = d.getSeconds();
+		document.body.innerHTML = h+":"+m+":"+s;
+	}
+	setInterval(printTime,1000);
+	</script>
+</body>
+</html>

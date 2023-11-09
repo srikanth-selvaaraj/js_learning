@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>Events</title>
+</head>
+<body>
+	<input type="text" id="name" onchange="change()">
+	<button onclick="show()">Click me</button>
+	<button id="demo">Click</button>
+	<script>
+		function change(){
+			var x = document.getElementById("name");
+			x.value = x.value.toUpperCase();
+		}
+		function show(){
+			alert("Hi there");
+		}
+		var x = document.getElementById("demo");
+		x.onclick = function (){
+			document.body.innerHTML = Date();
+		}
+	</script>
+</body>
+</html>

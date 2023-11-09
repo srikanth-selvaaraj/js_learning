@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<title>Basic of JS</title>
+	</head>
+	<body>
+		<script>
+			document.write("srikanth");
+			//this is a comment
+			/*bsdifhsdihfiodff*/
+			var x = 10;
+			y = x;
+			var z = 'This is my first \"javascript program\"';
+			document.write(z);		
+			x +=2;
+			document.write(x);
+			var m1 = 2;
+			var m2 = 6;
+			if (m1 == m2)
+			{
+				document.write("Javascripy alert box");
+			}
+			else if(m1 == m2)
+			{
+				document.write("second alert");
+			}
+			else
+			{
+				document.write("none of the condition is true");
+			}
+			var i=1;
+			for (text =" ";i<=5;)
+			{
+				text = i;
+				document.write(i + "<br/>");
+				i++;
+			}
+			while(i<=10){
+				document.write(i + "<br/>");
+				i++;
+			}
+			do{
+				document.write(i + "<br/>");
+				i++;
+			}
+			while(i<=15);
+			//from here the object capter is starting
+			var person = {name:'John', age:31, favColor:'green',height:183};
+			var x = person.age;
+			document.write(x);
+				
+			function perso (name,age,color) {
+				this.name = name;
+				this.age = age;
+				this.favColor = color;
+			}
+			var h = new perso("srikanth",18,"Royal_blue");
+			document.write(h.name);
+
+			function class() {
+				this.name = name;
+				this.age = age;
+				this.changeName = function(name){
+					this.name = name;
+					}
+			}
+			var p = new class("David",22);
+			document.write(p.change.Name("Ram"));
+		</script>
+	</body>
+</html>
